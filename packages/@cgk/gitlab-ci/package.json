@@ -1,0 +1,22 @@
+{
+  "name": "@cgk/gitlab-ci",
+  "version": "0.0.1",
+  "description": "Library to generate gitlab ci configuration files",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "json2ts",
+    "build": "npm run generate && tsc -b .",
+    "build+test": "npm run test && npm run build",
+    "local": "npm run build && npm link",
+    "clean": "rm -rf ./*-generated && npm prune"
+  },
+  "author": "Jack Reinhardt",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.6",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
+  }
+}

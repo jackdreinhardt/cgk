@@ -1,0 +1,4 @@
+bin/*.js
+lib/*.js
+*-generated/
+.DS_Store
